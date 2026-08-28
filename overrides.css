@@ -1,0 +1,23 @@
+.form-signoff {
+  display: block;
+  margin: 15px 0 0;
+  color: var(--navy);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  line-height: 1.02;
+  letter-spacing: -0.8px;
+}
+
+.form-signoff em {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  .form-signoff {
+    margin-top: 25px;
+    font-size: 27px;
+    line-height: 1.04;
+    letter-spacing: -1.1px;
+  }
+}
