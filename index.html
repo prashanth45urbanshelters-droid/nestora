@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07152d" />
+    <title>Nestora | Apartments in Electronic City</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero">
+      <header class="topbar">
+        <img class="brand" src="assets/nestora-logo.png" alt="Nestora Property Marketing" />
+        <a class="enquire-link" href="#enquiry-title">Enquire <span>→</span></a>
+      </header>
+      <div class="carousel" aria-label="Featured apartments">
+        <figure class="slide slide--one is-active"><img src="assets/premium-residences-landscape.webp" alt="Premium 2 and 3 BHK residences" /></figure>
+        <figure class="slide slide--two"><img src="assets/landscape-apartment-elevation.webp" alt="Modern apartment elevation" /></figure>
+      </div>
+      <div class="hero__content old-content" aria-hidden="true">
+        <header class="topbar">
+          <img class="brand" src="assets/nestora-logo.png" alt="Nestora Property Marketing" />
+          <a class="call" href="tel:+919000000000" aria-label="Call Nestora">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.1 16.3v3.1c0 .9-.7 1.6-1.6 1.6C10.9 21 3 13.1 3 3.5 3 2.7 3.7 2 4.5 2h3.1c.5 0 1 .4 1.1.9l.7 3c.1.5 0 1-.4 1.3L7.4 8.8a14 14 0 0 0 7.8 7.8l1.6-1.6c.4-.4.8-.5 1.3-.4l3 .7c.6.1 1 .6 1 1.1Z"/></svg>
+          </a>
+        </header>
+
+        <section class="intro" aria-labelledby="headline">
+          <p class="eyebrow"><span></span> PREMIUM ADDRESS · ELECTRONIC CITY</p>
+          <h1 id="headline">Life, elevated<br />in every detail.</h1>
+          <p class="description"><strong>2 &amp; 3 BHK</strong> apartments designed for the way you live today.</p>
+          <div class="approval-row">
+            <span><b>✓</b> RERA Approved</span>
+            <span><b>✓</b> BMRDA Approved</span>
+          </div>
+        </section>
+
+        <section class="amenities" aria-label="Highlights">
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M4.5 7.5 12 3l7.5 4.5M5 21V8l7 4 7-4v13M8.5 15h7"/></svg><span>Clubhouse</span></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10m14 10V4M3 20h18M8 10h8M10 7h4M9 4h6"/></svg><span>Fitness zone</span></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18c2-5 4-5 6 0 2-8 5-8 7 0 1-4 3-4 5 0M4 21h16"/></svg><span>Pool deck</span></div>
+        </section>
+        <div class="carousel-dots" aria-label="Banner slides"><button class="is-active" aria-label="Show first banner"></button><button aria-label="Show second banner"></button></div>
+      </div>
+
+      <section class="enquiry" aria-labelledby="enquiry-title">
+        <div class="enquiry__heading"><p>LIMITED HOMES AVAILABLE</p><h2 id="enquiry-title">Request a callback</h2></div>
+        <form id="enquiry-form">
+          <label><span>Your name</span><input name="name" autocomplete="name" placeholder="Enter your name" required /></label>
+          <label><span>Phone number</span><div class="phone-field"><b>+91</b><input name="phone" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number" required /></div><small>Enter a valid Indian mobile number (starts with 6, 7, 8 or 9).</small></label>
+          <button type="submit">Get project details <span>→</span></button>
+          <p class="consent">By submitting, you agree to receive project updates from Nestora.</p>
+        </form>
+        <p class="form-signoff">Find a home that feels<br /><em>uniquely yours.</em></p>
+      </section>
+    </main>
+    <div class="toast" role="status" aria-live="polite">Thank you! We’ll call you shortly.</div>
+    <script src="script.js"></script>
+  </body>
+</html>
