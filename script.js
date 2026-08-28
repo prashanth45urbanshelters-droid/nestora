@@ -1,7 +1,7 @@
 const form = document.querySelector('#enquiry-form');
 const toast = document.querySelector('.toast');
 const submitButton = form.querySelector('button[type="submit"]');
-const LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwmhFRJPumaGDNKyfqznmdIVrh4w16Lwaeb_WBBotUVkjmgWBMwMMXG1PAJfVWD4RwzkA/exec';
+const LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbx32tYyxSVS4p9KAr_MgBR9WEImIM4HR1foXy4CzI_CmoJ74tAtA60-mQcMCoaQtNmjLA/exec';
 const slides = [...document.querySelectorAll('.slide')];
 const dots = [...document.querySelectorAll('.carousel-dots button')];
 let activeSlide = 0;
