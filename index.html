@@ -50,7 +50,7 @@
         <div class="enquiry__heading"><p>LIMITED HOMES AVAILABLE</p><h2 id="enquiry-title">Request a callback</h2></div>
         <form id="enquiry-form">
           <label><span>Your name</span><input name="name" autocomplete="name" placeholder="Enter your name" required /></label>
-          <label><span>Phone number</span><div class="phone-field"><b>+91</b><input name="phone" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number" required /></div><small>Enter a valid Indian mobile number (starts with 6, 7, 8 or 9).</small></label>
+          <label><span>Phone number</span><div class="phone-field"><b>+91</b><input name="phone" type="tel" autocomplete="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" title="Enter a valid 10-digit Indian mobile number" placeholder="10-digit mobile number" required /></div></label>
           <button type="submit">Get project details <span>→</span></button>
           <p class="consent">By submitting, you agree to receive project updates from Nestora.</p>
         </form>
