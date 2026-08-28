@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="overrides.css" />
+    <link rel="stylesheet" href="success-modal.css" />
   </head>
   <body>
     <main class="hero">
@@ -58,7 +59,16 @@
         <p class="form-signoff">Find a home that feels<br /><em>uniquely yours.</em></p>
       </section>
     </main>
-    <div class="toast" role="status" aria-live="polite">Thank you! We’ll call you shortly.</div>
+    <div class="success-modal" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="success-title" hidden>
+      <div class="success-modal__backdrop"></div>
+      <div class="success-modal__card">
+        <div class="success-modal__icon">✓</div>
+        <p class="success-modal__eyebrow">ENQUIRY RECEIVED</p>
+        <h2 id="success-title">Thank you!</h2>
+        <p>Our property advisor will call you shortly.</p>
+        <button class="success-modal__button" type="button">Done</button>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

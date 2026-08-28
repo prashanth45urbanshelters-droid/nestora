@@ -1,6 +1,7 @@
 const form = document.querySelector('#enquiry-form');
-const toast = document.querySelector('.toast');
 const submitButton = form.querySelector('button[type="submit"]');
+const successModal = document.querySelector('#success-modal');
+const closeSuccessModal = successModal.querySelector('.success-modal__button');
 const LEADS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbx32tYyxSVS4p9KAr_MgBR9WEImIM4HR1foXy4CzI_CmoJ74tAtA60-mQcMCoaQtNmjLA/exec';
 const slides = [...document.querySelectorAll('.slide')];
 const dots = [...document.querySelectorAll('.carousel-dots button')];
@@ -31,15 +32,14 @@ form.addEventListener('submit', async (event) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
       body: new URLSearchParams({ name, phone }),
     });
-    toast.textContent = 'Thank you! We’ll call you shortly.';
-    toast.classList.add('show');
+    successModal.hidden = false;
     form.reset();
   } catch {
-    toast.textContent = 'Something went wrong. Please try again.';
-    toast.classList.add('show');
+    window.alert('Something went wrong. Please try again.');
   } finally {
     submitButton.disabled = false;
     submitButton.innerHTML = 'Get project details <span>→</span>';
-    window.setTimeout(() => toast.classList.remove('show'), 3500);
   }
 });
+
+closeSuccessModal.addEventListener('click', () => { successModal.hidden = true; });
